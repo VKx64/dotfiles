@@ -1,0 +1,57 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "source": "~/dotfiles/.config/fastfetch/ascii/anime_face.txt",
+    "padding": {
+      "right": 1,
+      "left": 0
+    }
+  },
+  "display": {
+    "separator": ": "
+  },
+  "modules": [
+    "title",
+    "break",
+    // "separator",
+    "os",
+    // "host",
+    // "kernel",
+    "uptime",
+    // "packages",
+    "shell",
+    // "display",
+    "de",
+    "wm",
+    // "wmtheme",
+    // "theme",
+    // "icons",
+    // "font",
+    // "cursor",
+    "terminal",
+    // "terminalfont",
+    {
+    "type": "cpu",
+    "format": "{name}"
+    },
+    "gpu",
+    "memory",
+    // "swap",
+    // "disk",
+    // "localip",
+    // "battery",
+    // "poweradapter",
+    // "locale",
+    // "break",
+    // "colors"
+    "break",
+    {
+      "type": "custom",
+      "format": "One day, I am gonna grow wings"
+    },
+    {
+      "type": "custom",
+      "format": "A chemical reaction"
+    }
+  ]
+}
