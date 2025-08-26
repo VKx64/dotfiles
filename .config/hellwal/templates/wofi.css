@@ -1,0 +1,67 @@
+/* Wofi CSS Configuration for hellwal templates */
+
+/* Global font settings for all widgets */
+* {
+  font-family: 'Fira Code', monospace;
+  font-size: 14px;
+  border: none;
+}
+
+/* #window - The main window background */
+window {
+  background-color: rgba(%%background.rgb%%, 0.9);
+  border-radius: 8px;
+  border: 2px solid rgba(%%color5.rgb%%, 0.99); 
+}
+
+/* #outer-box - The box that contains everything */
+#outer-box {
+  margin: 12px;
+  border: none;
+}
+
+/* #inner-box - The box containing all of the entries */
+#inner-box {
+  margin-top: 12px;
+  border: none;
+}
+
+/* #input - The search bar/entry field */
+#input {
+  padding: 5px;
+  border: none;
+  border-radius: 0.1em;
+  color: rgba(%%foreground.rgb%%, 0.99);
+  background-color: transparent;
+  border-radius: 4px
+}
+
+/* Search bar icon styling */
+#input image {
+  border: none;
+  background-color: transparent;
+}
+
+/* Remove focus outline on search input */
+#input:focus {
+  box-shadow: none;
+}
+
+/* #text - All text content in entries */
+#text {
+  margin: 5px;
+  margin-left: 10px;
+  border: none;
+  color: rgba(%%foreground.rgb%%, 0.99);
+}
+
+/* #entry - All menu entries */
+#entry:selected {
+  outline: none;
+  background-color: rgba(%%color4.rgb%%, 0.99);
+}
+
+/* Text styling for selected entries */
+#entry:selected #text {
+  color: rgba(%%background.rgb%%, 0.99);
+}
